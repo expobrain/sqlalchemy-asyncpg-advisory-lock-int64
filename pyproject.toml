@@ -13,17 +13,19 @@ float_to_top = true
 skip_glob = ".venv"
 
 [tool.poetry]
-name = "<project-name>"
+name = "sqlalchemy-asyncpg-advisory-lock-int64"
 version = "0.1.0"
-description = "<project-description>"
-repository = "https://github.com/expobrain/<project-name>"
+description = "Test of SQLAlchemy+Asyncpg+advisory locks"
+repository = "https://github.com/expobrain/sqlalchemy-asyncpg-advisory-lock-int64"
 authors = ["Daniele Esposti <daniele.esposti@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "<project-name>" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+SQLAlchemy = { extras = ["asyncio", "mypy"], version = "^1.4.36" }
+asyncpg = "^0.25.0"
+greenlet = "*"
 
 [tool.poetry.dev-dependencies]
 autoflake = "^1.4"
@@ -42,6 +44,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
 exclude = ".venv/"
+plugins = ["sqlalchemy.ext.mypy.plugin"]
 check_untyped_defs = true
 disallow_incomplete_defs = true
 warn_unused_configs = true
@@ -51,7 +54,6 @@ disallow_untyped_defs = true
 no_implicit_optional = true
 warn_redundant_casts = true
 warn_return_any = true
-
 # [[tool.mypy.overrides]]
 # module = "google.auth.credentials"
 # ignore_missing_imports = true
