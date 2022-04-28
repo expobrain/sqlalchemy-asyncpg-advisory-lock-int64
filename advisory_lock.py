@@ -1,6 +1,6 @@
 # import asyncpg
 import asyncpg
-from sqlalchemy import func, select
+from sqlalchemy import BigInteger, func, select
 from sqlalchemy.ext.asyncio import create_async_engine
 import asyncio
 
@@ -17,7 +17,7 @@ async def use_asyncpg() -> None:
     try:
         async with conn.transaction():
             stmt = await conn.prepare(
-                "SELECT pg_advisory_xact_lock($1::integer) AS pg_advisory_xact_lock_1"
+                "SELECT pg_advisory_xact_lock($1::bigint) AS pg_advisory_xact_lock_1"
             )
             await stmt.fetchval(LOCK_ID)
     finally:
@@ -29,7 +29,7 @@ async def use_sqlalchemy() -> None:
 
     try:
         async with engine.begin() as conn:
-            query = select(func.pg_advisory_xact_lock(LOCK_ID))
+            query = select(func.pg_advisory_xact_lock(LOCK_ID, type=BigInteger))
 
             await conn.execute(query)
 
