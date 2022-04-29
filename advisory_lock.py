@@ -29,7 +29,7 @@ async def use_sqlalchemy() -> None:
 
     try:
         async with engine.begin() as conn:
-            query = select(func.pg_advisory_xact_lock(LOCK_ID, type=BigInteger))
+            query = select(func.pg_advisory_xact_lock(LOCK_ID))
 
             await conn.execute(query)
 
