@@ -1,8 +1,8 @@
-# import asyncpg
+import asyncio
+
 import asyncpg
 from sqlalchemy import BigInteger, func, select
 from sqlalchemy.ext.asyncio import create_async_engine
-import asyncio
 
 DATABASE_URI = "postgresql+asyncpg://postgres:postgres@localhost/test"
 DATABASE_DSN = "postgresql://postgres:postgres@localhost/test"
