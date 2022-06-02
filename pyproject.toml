@@ -23,7 +23,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-SQLAlchemy = { extras = ["asyncio", "mypy"], version = "^1.4.36" }
+SQLAlchemy = { extras = ["asyncio", "mypy"], version = "^1.4.37" }
 asyncpg = "^0.25.0"
 greenlet = "*"
 
