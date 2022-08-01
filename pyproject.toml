@@ -35,7 +35,7 @@ mypy = "^0.961"
 pdbpp = "^0.10.3"
 pytest = "^7.0.1"
 pytest-cov = "^3.0.0"
-flake8 = "^4.0.1"
+flake8 = "^5.0.2"
 pyupgrade = "^2.37.3"
 
 [build-system]
