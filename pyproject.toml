@@ -28,7 +28,7 @@ asyncpg = "^0.26.0"
 greenlet = "*"
 
 [tool.poetry.dev-dependencies]
-autoflake = "^1.5"
+autoflake = "^1.6"
 black = "^22.8"
 isort = "^5.10.1"
 mypy = "^0.971"
