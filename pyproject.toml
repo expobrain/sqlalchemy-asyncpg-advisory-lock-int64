@@ -36,7 +36,7 @@ pdbpp = "^0.10.3"
 pytest = "^7.2.0"
 pytest-cov = "^4.0.0"
 flake8 = "^5.0.4"
-pyupgrade = "^2.37.3"
+pyupgrade = "^3.2.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
