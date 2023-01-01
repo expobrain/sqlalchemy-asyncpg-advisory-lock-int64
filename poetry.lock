@@ -27,14 +27,14 @@ tests-no-zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy"
 
 [[package]]
 name = "autoflake"
-version = "1.7.7"
+version = "2.0.0"
 description = "Removes unused imports and unused variables"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 
 [package.dependencies]
-pyflakes = ">=1.1.0"
+pyflakes = ">=3.0.0"
 tomli = {version = ">=2.0.1", markers = "python_version < \"3.11\""}
 
 [[package]]
@@ -432,7 +432,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "bfb536a9bac1a21d866b4a67191241555628b1f6b48e662b8f59f204bc3baee6"
+content-hash = "b90b7ad0073e045ec5b15a953b6a25d09d1dac6d801a15defeca0049d06ea3a7"
 
 [metadata.files]
 asyncpg = [
@@ -478,8 +478,8 @@ attrs = [
     {file = "attrs-21.4.0.tar.gz", hash = "sha256:626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd"},
 ]
 autoflake = [
-    {file = "autoflake-1.7.7-py3-none-any.whl", hash = "sha256:a9b43d08f8e455824e4f7b3f078399f59ba538ba53872f466c09e55c827773ef"},
-    {file = "autoflake-1.7.7.tar.gz", hash = "sha256:c8e4fc41aa3eae0f5c94b939e3a3d50923d7a9306786a6cbf4866a077b8f6832"},
+    {file = "autoflake-2.0.0-py3-none-any.whl", hash = "sha256:d58ed4187c6b4f623a942b9a90c43ff84bf6a266f3682f407b42ca52073c9678"},
+    {file = "autoflake-2.0.0.tar.gz", hash = "sha256:7185b596e70d8970c6d4106c112ef41921e472bd26abf3613db99eca88cc8c2a"},
 ]
 black = [
     {file = "black-22.10.0-1fixedarch-cp310-cp310-macosx_11_0_x86_64.whl", hash = "sha256:5cc42ca67989e9c3cf859e84c2bf014f6633db63d1cbdf8fdb666dcd9e77e3fa"},
