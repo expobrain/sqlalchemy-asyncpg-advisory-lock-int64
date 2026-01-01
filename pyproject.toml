@@ -30,7 +30,7 @@ greenlet = "*"
 [tool.poetry.dev-dependencies]
 autoflake = "^2.3"
 black = "^24.3"
-isort = "^5.13.2"
+isort = "^7.0.0"
 mypy = "^1.9"
 pdbpp = "^0.10.3"
 pytest = "^8.2.2"
